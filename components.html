@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue Components</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Practicing Components</h1>
+
+    <div class="apps">
+
+    </div>
+
+    <button onclick="navigate('prev')" class="prev-nav-btn">Previous</button>
+    <button onclick="navigate('next')" class="next-nav-btn">Next</button>
+
+    <script>
+        
+        function navigate(direction){
+            if (direction == 'prev'){
+                window.location.replace('index.html');
+            }
+            else {
+                window.alert('End of Tutorial');
+            }
+        }
+    
+    </script>
+    
+</body>
+</html>
