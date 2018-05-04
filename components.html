@@ -14,13 +14,22 @@
     <h1>Practicing Components</h1>
 
     <div class="apps">
-
+        <div>
+            <h3>First Example</h3>
+            <ol>
+                <todo-item></todo-item>
+            </ol>
+        </div>
     </div>
 
     <button onclick="navigate('prev')" class="prev-nav-btn">Previous</button>
     <button onclick="navigate('next')" class="next-nav-btn">Next</button>
 
     <script>
+
+        Vue.component('todo-item', {
+            template: '<li>This is a todo</li>'
+        })
         
         function navigate(direction){
             if (direction == 'prev'){
